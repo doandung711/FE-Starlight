@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <title>Quản lý rạp chiếu phim Starlight</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html">ADMIN STARLIGHT</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">Đoàn Văn Dũng </h5>
+                                    <span class="status"></span><span class="ml-2">Admin</span>
+                                </div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                QUẢN LÝ DỮ LIỆU
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="movieType.html" aria-expanded="false" ><i class="fa fa-fw fa-film"></i>Quản lý loại phim </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="movie.html" aria-expanded="false" ><i class="fa fa-fw fa-video"></i>Quản lý phim </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="chair.html" aria-expanded="false" ><i class="fa fa-fw fa-chair"></i>Quản lý ghế xem phim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="room.html" aria-expanded="false" ><i class="fa fa-fw fa-store"></i>Quản lý phòng chiếu phim </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="time.html" aria-expanded="false" ><i class="fa fa-fw fa-calendar-days"></i>Quản lý suất chiếu phim </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ticket.html" aria-expanded="false" ><i class="fa fa-fw fa-ticket"></i>Quản lý vé xem phim </a>
+                            </li>
+                            <li class="nav-divider">
+                                QUẢN LÝ NGƯỜI DÙNG
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user.html" aria-expanded="false" ><i class="fa fa-fw fa-users"></i>Quản lý khách hàng và Admin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="dashboard-wrapper">
+            <div class="dashboard-ecommerce">
+                <div class="container-fluid dashboard-content ">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h2 class="pageheader-title">Home </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ecommerce-widget">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chọn phương thức thống kê:</h5>
+                                        <!-- Thêm combobox tại đây -->
+                                        <select id="selectMethod" class="form-control">
+                                            <option value="revenue">Thống kê doanh thu</option>
+                                            <option value="showing">Thống kê suất chiếu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="tkdoanhthu" style="display: flex; flex-direction: row;">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <select id="selectTime" class="form-control">
+                                            <option value="week">Tuần</option>
+                                            <option value="month">Tháng</option>
+                                            <option value="year">Năm</option>
+                                        </select>
+                                        <div class="chart-container" id="weekchart">
+                                            <canvas id="weekRevenueChart"></canvas>
+                                        </div>
+                                        <div class="chart-container" id="monthchart">
+                                            <canvas id="monthRevenueChart"></canvas>
+                                        </div>
+                                        <div class="chart-container" id="yearchart">
+                                            <canvas id="yearRevenueChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <label for="">Doanh thu phim</label>
+                                        <div class="chart-container">
+                                            <canvas id="movieRevenueChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        </div>
+                        
+                        <div class="row " id="tksuatchieu">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Số lượng người đặt vé cho mỗi suất chiếu</h5>
+                                        <div class="chart-container">
+                                            <canvas id="bookingChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                             Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="javascript: void(0);">About</a>
+                                <a href="javascript: void(0);">Support</a>
+                                <a href="javascript: void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- end wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="assets/libs/js/main-js.js"></script>
+    <!-- chart chartist js -->
+    <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <!-- sparkline js -->
+    <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script>
+        const weekRevenueData = {
+            
+            labels:['Thứ 2','Thứ 3','Thứ 4','Thứ 5','Thứ 6','Thứ 7','Chủ nhật'],
+            datasets: [{
+                label: 'Doanh thu',
+                data: [15000, 22000, 18000, 25000, 20000, 28000,30000],
+                backgroundColor: 'rgba(255, 159, 64, 0.6)', // Màu cam
+                borderColor: 'rgba(255, 159, 64, 1)', // Màu cam
+                borderWidth: 1
+            }]
+        };
+        const monthRevenueData = {
+            
+            labels:['Tháng 1', 'Tháng 2','Tháng 3','Tháng 4','Tháng 5','Tháng 6','Tháng 7','Tháng 8','Tháng 9','Tháng 10','Tháng 11','Tháng 12'],
+            datasets: [{
+                label: 'Doanh thu',
+                data: [15000, 22000, 18000, 25000, 20000, 28000, 30000, 15000, 22000, 18000, 25000, 20000],
+                backgroundColor: 'rgba(255, 159, 64, 0.6)', // Màu cam
+                borderColor: 'rgba(255, 159, 64, 1)', // Màu cam
+                borderWidth: 1
+            }]
+        };
+        const yearRevenueData = {
+            
+            labels:['2022', '2023','2024'],
+            datasets: [{
+                label: 'Doanh thu',
+                data: [15000, 22000, 18000],
+                backgroundColor: 'rgba(255, 159, 64, 0.6)', // Màu cam
+                borderColor: 'rgba(255, 159, 64, 1)', // Màu cam
+                borderWidth: 1
+            }]
+        };
+        const movieRevenueData = {
+            labels: ['Movie 1', 'Movie 2', 'Movie 3', 'Movie 4', 'Movie 5'],
+            datasets: [{
+                label: 'Phim',
+                data: [3000, 5000, 4000, 6000, 4500],
+                backgroundColor: 'rgba(75, 192, 192, 0.6)', // Màu xanh lá cây
+                borderColor: 'rgba(75, 192, 192, 1)', // Màu xanh lá cây
+                borderWidth: 1
+            }]
+        };
+
+        // Configure options for both charts
+        const chartOptionRevenue = {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        // Ẩn đơn vị của các giá trị trên trục y
+                        callback: function(value, index, values) {
+                            return value+ " đ"; // Sử dụng hàm toLocaleString() để định dạng số
+                        }
+                    },
+                    
+                }
+            }
+        };
+
+        // Initialize and render monthly revenue chart
+        const weekRevenueChart = document.getElementById('weekRevenueChart').getContext('2d');
+        new Chart(weekRevenueChart, {
+            type: 'bar',
+            data: weekRevenueData,
+            options: chartOptionRevenue
+        });
+        const monthRevenueChart = document.getElementById('monthRevenueChart').getContext('2d');
+        new Chart(monthRevenueChart, {
+            type: 'bar',
+            data: monthRevenueData,
+            options: chartOptionRevenue
+        });
+        const yearRevenueChart = document.getElementById('yearRevenueChart').getContext('2d');
+        new Chart(yearRevenueChart, {
+            type: 'bar',
+            data: yearRevenueData,
+            options: chartOptionRevenue
+        });
+
+        // Initialize and render movie revenue chart
+        const movieRevenueChart = document.getElementById('movieRevenueChart').getContext('2d');
+        new Chart(movieRevenueChart, {
+            type: 'bar',
+            data: movieRevenueData,
+            options: chartOptionRevenue
+        });
+        // Dữ liệu biểu đồ đường
+        const bookingData = {
+            labels: ['9:00', '11:05', '13:10', '9:00', '11:05', '13:10', '9:00', '11:05', '13:10', '9:00', '11:05', '13:10'],
+            datasets: [{
+                label: 'Số lượng người đặt vé',
+                data: [50, 70, 65, 80, 75, 90,100,30,26,56,78,28],
+                fill: false,
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 2
+            }]
+        };
+
+        // Cấu hình biểu đồ đường
+        const bookingOptions = {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        };
+
+        // Khởi tạo và vẽ biểu đồ đường
+        const bookingChart = document.getElementById('bookingChart').getContext('2d');
+        new Chart(bookingChart, {
+            type: 'line',
+            data: bookingData,
+            options: bookingOptions
+        });
+    </script>
+    <script>
+        // Lắng nghe sự kiện khi giá trị của combobox thay đổi
+        document.addEventListener("DOMContentLoaded", function() {
+            var method = document.getElementById('selectMethod').value; // Lấy giá trị mặc định
+    
+            // Ẩn hoặc hiển thị các biểu đồ tương ứng với phương thức được chọn
+            if (method === 'revenue') {
+                document.getElementById('tksuatchieu').style.display = 'none';
+                document.getElementById('tkdoanhthu').style.display = 'block';
+                document.getElementById('tkdoanhthu').style.display = 'flex';
+            } else if (method === 'showing') {
+                document.getElementById('tkdoanhthu').style.display = 'none';
+                document.getElementById('tksuatchieu').style.display = 'block';
+            }
+    
+            // Lắng nghe sự kiện thay đổi của thẻ select
+            document.getElementById('selectMethod').addEventListener('change', function() {
+                var method = this.value; // Lấy giá trị được chọn
+    
+                // Ẩn hoặc hiển thị các biểu đồ tương ứng với phương thức được chọn
+                if (method === 'revenue') {
+                    document.getElementById('tksuatchieu').style.display = 'none';
+                    document.getElementById('tkdoanhthu').style.display = 'block';
+                    document.getElementById('tkdoanhthu').style.display = 'flex';
+                } else if (method === 'showing') {
+                    document.getElementById('tkdoanhthu').style.display = 'none';
+                    document.getElementById('tksuatchieu').style.display = 'block';
+                }
+            });
+            
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var method = document.getElementById('selectTime').value; // Lấy giá trị mặc định
+            if (method === 'week') {
+                document.getElementById('weekchart').style.display = 'block';
+                document.getElementById('monthchart').style.display = 'none';
+                document.getElementById('yearchart').style.display = 'none';
+            } else if (method === 'month') {
+                document.getElementById('weekchart').style.display = 'none';
+                document.getElementById('monthchart').style.display = 'block';
+                document.getElementById('yearchart').style.display = 'none';
+            } else if (method === 'year') {
+                document.getElementById('weekchart').style.display = 'none';
+                document.getElementById('monthchart').style.display = 'none';
+                document.getElementById('yearchart').style.display = 'block';
+            }
+    
+            document.getElementById('selectTime').addEventListener('change', function() {
+                var timeRange = this.value; // Lấy giá trị được chọn
+    
+                // Cập nhật hiển thị biểu đồ tương ứng với thời gian được chọn
+                if (timeRange === 'week') {
+                    document.getElementById('weekchart').style.display = 'block';
+                    document.getElementById('monthchart').style.display = 'none';
+                    document.getElementById('yearchart').style.display = 'none';
+                } else if (timeRange === 'month') {
+                    document.getElementById('weekchart').style.display = 'none';
+                    document.getElementById('monthchart').style.display = 'block';
+                    document.getElementById('yearchart').style.display = 'none';
+                } else if (timeRange === 'year') {
+                    document.getElementById('weekchart').style.display = 'none';
+                    document.getElementById('monthchart').style.display = 'none';
+                    document.getElementById('yearchart').style.display = 'block';
+                }
+            });
+        });
+    </script>
+    
+</body>
+ 
+</html>
