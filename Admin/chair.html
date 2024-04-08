@@ -41,8 +41,6 @@
                                     <h5 class="mb-0 text-white nav-user-name">Đoàn Văn Dũng </h5>
                                     <span class="status"></span><span class="ml-2">Admin</span>
                                 </div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
@@ -134,25 +132,25 @@
                                     <div class="form-row d-flex align-items-center">
                                         <div class="form-group col-sm-3">
                                             
-                                            <select class="form-control" id="movieName1" name="movieName1">
-                                                <option value="movie1">--Chọn phim--</option>
-                                                <option value="movie2">Phim 2</option>
-                                                <option value="movie3">Phim 3</option>
+                                            <select class="form-control" id="movieName" name="movieName">
+                                                <option value="">--Chọn phim--</option>
+                                                <option value="movieName">Phim 2</option>
+                                                <option value="movieName">Phim 3</option>
                                             </select>
                                         </div>
                                         <div class="form-group col-sm-3">
                                             
-                                            <select class="form-control" id="movieName2" name="movieName2">
-                                                <option value="movie1">--Chọn suất chiếu--</option>
-                                                <option value="movie2">Phim 2</option>
-                                                <option value="movie3">Phim 3</option>
+                                            <select class="form-control" id="cinemaTime" name="cinemaTime">
+                                                <option value="cinemaTime">--Chọn suất chiếu--</option>
+                                                <option value="cinemaTime">Phim 2</option>
+                                                <option value="cinemaTime">Phim 3</option>
                                             </select>
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Nhập ghế cần tìm" autofocus>
+                                                <input type="text" class="form-control" name="searchValue" placeholder="Nhập tên ghế cần tìm" autofocus>
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-info" type="submit">
+                                                    <button class="btn btn-primary" type="submit">
                                                         <i class="fa fa-search"></i>
                                                     </button>
                                                     <a data-toggle="modal" data-target="#myModal" class="btn btn-success" style="margin-left: 5px; color: #fff;">
@@ -172,15 +170,15 @@
                                                                 <div class="modal-body">
                                                                     <div class="form-group">
                                                                         <label for="">Ngày bắt đầu:</label>
-                                                                        <input type="date" name="" id="" class="form-control" >
+                                                                        <input type="date" name="startDate" id="" class="form-control" >
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label for="">Ngày kết thúc:</label>
-                                                                        <input type="date" name="" id="" class="form-control" >
+                                                                        <input type="date" name="endDate" id="" class="form-control" >
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label for="">Giá ghế:</label>
-                                                                        <input type="number" name="" id="" class="form-control" >
+                                                                        <input type="number" name="chairPrice" id="" class="form-control" >
                                                                     </div>
                                                                 </div>
                                                                 <!-- Modal footer -->
@@ -225,6 +223,15 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                </div>
+                                <div class="row" style="justify-content: center; margin-top: 24px;">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

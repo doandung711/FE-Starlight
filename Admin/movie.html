@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
-    <title>Quản lý khách hàng</title>
+    <title>Quản lý phim</title>
 </head>
 
 <body>
@@ -41,8 +41,6 @@
                                     <h5 class="mb-0 text-white nav-user-name">Đoàn Văn Dũng </h5>
                                     <span class="status"></span><span class="ml-2">Admin</span>
                                 </div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
@@ -142,12 +140,12 @@
                                         </div>
                                         <div class="form-group col-sm-3">
                                             <label for="">Chọn suất chiếu:</label>
-                                            <input type="date" name="" id="" class="form-control" >
+                                            <input type="date" name="cinemaTime" id="" class="form-control" >
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <label for="">Nhập phim cần tìm: </label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" autofocus>
+                                                <input type="text" name="searchValue" class="form-control" autofocus>
                                                 <div class="input-group-append">
                                                     <button class="btn btn-info" type="submit">
                                                         <i class="fa fa-search"></i>
@@ -190,7 +188,7 @@
                                                         <td>haha</td>
                                                         <td>3D, 18T</td>
                                                         <td class="text-center">
-                                                            <a href="movie.edit.html" class="btn btn-xs btn-info" style="width: 35px;">
+                                                            <a href="movie_edit.html" class="btn btn-xs btn-info" style="width: 35px;">
                                                                 <i class="fa fa-edit"></i>
                                                             </a>
                                                             <a data-toggle="modal" data-target="#myModal" class="btn btn-xs btn-danger" style="width: 35px;color: #fff;">
@@ -257,6 +255,15 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                </div>
+                                <div class="row" style="justify-content: center; margin-top: 24px;">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

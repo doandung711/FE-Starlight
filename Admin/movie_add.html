@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
-    <title>Quản lý khách hàng</title>
+    <title>Quản lý phim</title>
 </head>
 
 <body>
@@ -41,8 +41,6 @@
                                     <h5 class="mb-0 text-white nav-user-name">Đoàn Văn Dũng </h5>
                                     <span class="status"></span><span class="ml-2">Admin</span>
                                 </div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
@@ -159,17 +157,13 @@
                                     <div class="form-group">
                                         <label>Ảnh chính:</label>
                                         <div >
-                                            <input type="hidden" name="Photo" value="@Model.Photo" />
-                                            <input type="file" class="form-control" name="uploadPhoto" accept="image/*"
-                                                   onchange="document.getElementById('Photo').src = window.URL.createObjectURL(this.files[0])" />
+                                            <input type="file" class="form-control" name="txtMainImage" id="txtMainImage" value="">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label >Ảnh phụ:</label>
                                         <div >
-                                            <input type="hidden" name="Photo" value="@Model.Photo" />
-                                            <input type="file" class="form-control" name="uploadPhoto" accept="image/*"
-                                                   onchange="document.getElementById('Photo').src = window.URL.createObjectURL(this.files[0])" />
+                                            <input type="file" class="form-control" name="txtThumnail" id="txtThumnail" value="">
                                         </div>
                                     </div>
                                    

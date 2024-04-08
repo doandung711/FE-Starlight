@@ -41,8 +41,6 @@
                                     <h5 class="mb-0 text-white nav-user-name">Đoàn Văn Dũng </h5>
                                     <span class="status"></span><span class="ml-2">Admin</span>
                                 </div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
@@ -134,10 +132,10 @@
                                     <div class="form-row d-flex align-items-center">
                                         <div class="form-group col-sm-3">
                                             
-                                            <select class="form-control" id="movieName1" name="movieName1">
-                                                <option value="movie1">--Trạng thái--</option>
-                                                <option value="movie2">Đơn đặt vé chưa xử lý</option>
-                                                <option value="movie3">Đơn đặt vé đã xử lý</option>
+                                            <select class="form-control" id="status" name="status">
+                                                <option value="">--Trạng thái--</option>
+                                                <option value="status">Đơn đặt vé chưa xử lý</option>
+                                                <option value="status">Đơn đặt vé đã xử lý</option>
                                             </select>
                                         </div>
                                         <!-- <div class="form-group col-sm-3">
@@ -145,7 +143,7 @@
                                         </div> -->
                                         <div class="form-group col-sm-9">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Nhập tên khách hàng hoặc phim cần tìm" autofocus>
+                                                <input type="text" name="searchValue" class="form-control" placeholder="Nhập tên khách hàng hoặc phim cần tìm" autofocus>
                                                 <div class="input-group-append">
                                                     <button class="btn btn-info" type="submit">
                                                         <i class="fa fa-search"></i>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
-    <title>Quản lý khách hàng</title>
+    <title>Quản lý phim</title>
 </head>
 
 <body>
@@ -41,8 +41,6 @@
                                     <h5 class="mb-0 text-white nav-user-name">Đoàn Văn Dũng </h5>
                                     <span class="status"></span><span class="ml-2">Admin</span>
                                 </div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
@@ -132,44 +130,44 @@
                                     <input type="hidden" name="MovieID" value=""/>
                                     <div class="form-group">
                                         <label>Tên phim:</label>
-                                        <input type="text" class="form-control" name="MovieName" value="Bố già" >
+                                        <input type="text" class="form-control" name="movieName" value="Bố già" >
                                     </div>
                                     <div class="form-group">
                                         <label>Ngày khởi chiếu:</label>
-                                        <input type="date" class="form-control" name="NgaySinh" value="4/4/2024"> 
+                                        <input type="date" class="form-control" name="movieDate" value="4/4/2024"> 
                                     </div>
                                     <div class="form-group">
                                         <label>Thời lượng phim:</label>
-                                        <input type="text" class="form-control" name="Phone" value="120 phút">
+                                        <input type="text" class="form-control" name="movieDuration" value="120 phút">
                                     </div>
                                     <div class="form-group">
                                         <label>Đạo diễn:</label>
-                                        <input type="text" class="form-control" name="Email" value="Trấn Thành">
+                                        <input type="text" class="form-control" name="director" value="Trấn Thành">
                                         
                                     </div>
                                     <div class="form-group">
                                         <label>Diễn viên:</label>
-                                        <input type="text" class="form-control" name="Address" value="Đoàn Văn Dũng">
+                                        <input type="text" class="form-control" name="actor" value="Đoàn Văn Dũng">
                                     </div>
                         
                                     <div class="form-group">
                                         <label>Kịch bản:</label>
-                                        <input type="text" class="form-control" name="Address" value="haha">
+                                        <input type="text" class="form-control" name="movieScript" value="haha">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Định dạng:</label>
+                                        <input type="text" class="form-control" name="movieFormat" value="3D">
                                     </div>
                                     <div class="form-group">
                                         <label>Ảnh chính:</label>
                                         <div >
-                                            <input type="hidden" name="mainImage" value="@Model.Photo" />
-                                            <input type="file" class="form-control" name="uploadPhoto" accept="image/*"
-                                                   onchange="document.getElementById('Photo').src = window.URL.createObjectURL(this.files[0])" />
+                                            <input type="file" class="form-control" name="txtMainImage" id="txtMainImage" value="">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label >Ảnh phụ:</label>
                                         <div >
-                                            <input type="hidden" name="thumnail" value="@Model.Photo" />
-                                            <input type="file" class="form-control" name="uploadPhoto" accept="image/*"
-                                                   onchange="document.getElementById('Photo').src = window.URL.createObjectURL(this.files[0])" />
+                                            <input type="file" class="form-control" name="txtThumnail" id="txtThumnail" value="">
                                         </div>
                                     </div>
                                    
