@@ -1622,6 +1622,10 @@ Top Header
     border-radius: 2px;
     background-color: transparent;
 }
+.nav-item.active a {
+    font-weight: bold;
+    color: #007bff; /* Màu sắc của liên kết khi được chọn */
+}
 
 
 
