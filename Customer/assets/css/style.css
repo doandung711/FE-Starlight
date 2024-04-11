@@ -60,6 +60,7 @@ ol, ul {
     height: 600px;
 }
 /* set header */
+
 .height-header{
     max-height: 56px;
 } 
@@ -430,11 +431,81 @@ ol, ul {
 
 /* CONTACT */
 .contact-content {
-    background-color: #e6e7ef !important;
+    background-image: url('../images/bg_body.jpg'); /* Đường dẫn đến ảnh của bạn */
+    background-size: cover; /* Hiển thị ảnh toàn màn hình */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    background-position: center; /* Căn giữa ảnh */
 }
 .frm-contact-footer .btn{
     background-color: #45A29E;
     transition: all 0.3s ease;
     border-radius: 15px;
     padding: 6px 22px;
+}
+/* Xác nhận thông tin */
+.confirmInformation{
+    background-color: #1c1919;
+}
+.confirmInformation-header{
+    background-color: #111;
+    padding: 20px 0 20px 0;
+    color: #fff;
+    text-align: center;
+    border-bottom: #fff solid 4px;
+}
+.confirmInformation-content{
+}
+.confirmInformation-customer, .confirmInformation-film, .confirmInformation-combo, .confirmInformation-pay{
+    color: #fff;
+
+}
+.confirmInformation-customer p, .confirmInformation-film p{
+    margin: 0;
+}
+.confirmInformation-film div{
+    margin-top: 3px;
+}
+.confirmInformation-film div{
+    text-align: center;
+    border: #fff solid 1px;
+    border-radius: 12px;
+    width: 110px;
+    justify-content: center;
+}
+.confirmInformation-combo h6{
+    margin: 0;
+}
+.confirmInformation-combo p{
+    margin: 0;
+}
+.confirmInformation-footer{
+    border-top: #fff dashed 1px ;
+    padding-bottom: 60px;
+}
+.confirmInformation-footer button{
+    margin-right: 12px;
+    margin-top: 12px;
+    background-color: #18beb5;
+    color: #fff;
+    font-weight: bold;
+    width: 360px;
+    height: 55px;
+    transition: background-color 0.3s;
+}
+.confirmInformation-footer button:hover {
+    color: #fff;
+    animation: gradientAnimation 1s ease;
+    background-color: #246d69;
+    
+}
+@keyframes gradientAnimation {
+    0% {
+        transform: scale(1); /* Scale bắt đầu từ 100% */
+    }
+    50% {
+        transform: scale(1.1); /* Scale lớn lên 110% ở giữa animation */
+    }
+    100% {
+        transform: scale(1); /* Scale trở về kích thước ban đầu */
+    }
 }

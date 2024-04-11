@@ -162,49 +162,7 @@
                                                     <button class="btn btn-primary" type="submit">
                                                         <i class="fa fa-search"></i>
                                                     </button>
-                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-success" style="margin-left: 5px; color: #fff;">
-                                                        <i class="fa fa-plus"></i> Bổ sung
-                                                    </a>
-                                                    <!-- The Modal -->
-                                                    <div class="modal fade" id="myModal">
-                                                        <div class="modal-dialog">
-                                                            <div class="modal-content">
-                                                            
-                                                                <!-- Modal Header -->
-                                                                <div class="modal-header">
-                                                                <h4 class="modal-title ">Cập nhật ghế</h4>
-                                                                <button type="button" class="close" data-dismiss="modal">×</button>
-                                                                </div>
-                                                                
-                                                                <div class="modal-body">
-                                                                    <div class="form-group">
-                                                                        <label for="">Ngày bắt đầu:</label>
-                                                                        <input type="date" name="startDate" id="" class="form-control" >
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="">Ngày kết thúc:</label>
-                                                                        <input type="date" name="endDate" id="" class="form-control" >
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="">Giá ghế:</label>
-                                                                        <input type="number" name="chairPrice" id="" class="form-control" >
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label for="">Phòng:</label>
-                                                                        <select class="form-control" id="cinemaRoom" name="cinemaRoom">
-                                                                            <option value="">--Chọn phòng chiếu--</option>
-                                                                            <option value="cinemaRoom">Phòng 01</option>
-                                                                            <option value="cinemaRoom">Phòng 02</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- Modal footer -->
-                                                                <div class="modal-footer">
-                                                                    <a href="#" class="btn btn-primary btn-sm">Cập nhật</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -224,6 +182,7 @@
                                                     <th>Giá ghế</th>
                                                     <th>Phòng</th>
                                                     <th>Trạng thái</th>
+                                                    <th style="width: 80px;"></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -234,6 +193,11 @@
                                                     <td>120,000đ</td>
                                                     <td>Phòng A</td>
                                                     <td>Trống</td>
+                                                    <td class="text-center">
+                                                        <a data-toggle="modal" data-target="#myModal"class="btn btn-xs btn-info" style="width: 35px; color: #fff;">
+                                                            <i class="fa fa-edit"></i>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
@@ -242,6 +206,11 @@
                                                     <td>55,000đ</td>
                                                     <td>Phòng B</td>
                                                     <td>Trống</td>
+                                                    <td class="text-center">
+                                                        <a data-toggle="modal" data-target="#myModal"class="btn btn-xs btn-info" style="width: 35px; color: #fff;">
+                                                            <i class="fa fa-edit"></i>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
@@ -250,6 +219,11 @@
                                                     <td>120,000đ</td>
                                                     <td>Phòng C</td>
                                                     <td>Trống</td>
+                                                    <td class="text-center">
+                                                        <a data-toggle="modal" data-target="#myModal"class="btn btn-xs btn-info" style="width: 35px; color: #fff;">
+                                                            <i class="fa fa-edit"></i>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
@@ -258,6 +232,11 @@
                                                     <td>55,000đ</td>
                                                     <td>Phòng D</td>
                                                     <td>Trống</td>
+                                                    <td class="text-center">
+                                                        <a data-toggle="modal" data-target="#myModal"class="btn btn-xs btn-info" style="width: 35px; color: #fff;">
+                                                            <i class="fa fa-edit"></i>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>5</td>
@@ -266,16 +245,63 @@
                                                     <td>120,000đ</td>
                                                     <td>Phòng E</td>
                                                     <td>Trống</td>
+                                                    <td class="text-center">
+                                                        <a data-toggle="modal" data-target="#myModal"class="btn btn-xs btn-info" style="width: 35px; color: #fff;">
+                                                            <i class="fa fa-edit"></i>
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                             
                                         </table>
+                                        <!-- The Modal -->
+                                        <div class="modal fade" id="myModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                    <h4 class="modal-title ">Cập nhật ghế</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                                    </div>
+                                                    
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <label for="">Ngày bắt đầu:</label>
+                                                            <input type="date" name="startDate" id="" class="form-control" >
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Ngày kết thúc:</label>
+                                                            <input type="date" name="endDate" id="" class="form-control" >
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Giá ghế:</label>
+                                                            <input type="number" name="chairPrice" id="" class="form-control" >
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="">Phòng:</label>
+                                                            <select class="form-control" id="cinemaRoom" name="cinemaRoom">
+                                                                <option value="">--Chọn phòng chiếu--</option>
+                                                                <option value="cinemaRoom">Phòng 01</option>
+                                                                <option value="cinemaRoom">Phòng 02</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Modal footer -->
+                                                    <div class="modal-footer">
+                                                        <a href="#" class="btn btn-primary btn-sm">Cập nhật</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row" style="justify-content: center; margin-top: 24px;">
                                     <ul class="pagination">
                                         <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
                                         <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
                                         <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
                                     </ul>
                                 </div>
