@@ -574,3 +574,57 @@ ol, ul {
         transform: scale(1); /* Scale trở về kích thước ban đầu */
     }
 }
+/* PHIM SẮP CHIẾU */
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    /* padding: 24px; */
+}
+.image-container img {
+    width: 100%;
+}
+.card-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    transition: .7s;
+
+}
+.image-container:hover .card-overlay {
+    opacity: 1;
+}
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 15px 0px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    width: 300px;
+    height: 500px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+margin-bottom: 15px;
+}
+
+.phimsapchieuchieu-content{
+    padding-bottom: 12px;
+    background-color: #e6e7e0;
+
+    padding-top: 10px;
+}
+.card-body p{
+    margin: 0px;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lịch sử giao dịch</title>
+    <title>Phim sắp chiếu</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body class="">
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
             <div class="container-fluid">
@@ -51,7 +51,7 @@
                         <div class="d-flex align-items-center position-relative header-user">
                             <i class="fa fa-user"></i>
                             <a style="color: #33aba5 ;" class="nav-link dropdown-toggle fw-normal px-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                Đoàn Văn Dũng
+                                Đặng Thị Quyên
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <li><a class="dropdown-item" href="#">Thông tin cá nhân</a></li>
@@ -66,153 +66,175 @@
             </div>
         </nav>
     </div>
-    <div class="content">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6 text-center mt-5 bg-white border rounded " style="height: 500px;">
-                <h3 class="mt-4" style="color: #246d69;">Lịch sử giao dịch Online</h3>
-                <table class="table mt-4 table-bordered table-striped">
-                    <thead class="table-header">
-                        <tr>
-                            <th scope="col">Mã đơn đặt</th>
-                            <th scope="col">Thời điểm</th>
-                            <th scope="col">Tổng tiền</th>
-                            <th scope="col">Thanh toán</th>
-                            <th scope="col">Chi tiết</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>12345</td>
-                            <td>08/04/2024 10:30:00</td>
-                            <td>150,000đ</td>
-                            <td>Đã thanh toán</td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="btn" style="background-color:#28817d; font-size: 8px;">
-                                    <i style="font-size: 16px; color: #fff;" class="fa fa-list"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>12345</td>
-                            <td>08/04/2024 10:30:00</td>
-                            <td>150,000đ</td>
-                            <td>Đã thanh toán</td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="btn" style="background-color:#28817d; font-size: 8px;">
-                                    <i style="font-size: 16px; color: #fff;" class="fa fa-list"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>12345</td>
-                            <td>08/04/2024 10:30:00</td>
-                            <td>150,000đ</td>
-                            <td>Đã thanh toán</td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="btn" style="background-color:#28817d; font-size: 8px;">
-                                    <i style="font-size: 16px; color: #fff;" class="fa fa-list"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>12345</td>
-                            <td>08/04/2024 10:30:00</td>
-                            <td>150,000đ</td>
-                            <td>Đã thanh toán</td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="btn" style="background-color:#28817d; font-size: 8px;">
-                                    <i style="font-size: 16px; color: #fff;" class="fa fa-list"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>12345</td>
-                            <td>08/04/2024 10:30:00</td>
-                            <td>150,000đ</td>
-                            <td>Đã thanh toán</td>
-                            <td>
-                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" class="btn" style="background-color:#28817d; font-size: 8px;">
-                                    <i style="font-size: 16px; color: #fff;" class="fa fa-list"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">CHI TIẾT GIAO DỊCH</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <div class="phimsapchieuchieu-content">
+        <div class="container">                
+            <div class="row row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card image-container">
+                        <img src="https://starlight.vn/Areas/Admin/Content/Fileuploads/images/POSTER/luca.jpg" alt="Your Image" class="img-fluid">
+                        <div class="card-body">
+                            <div class="movie-content text-center">
+                                <h4 class="text-dark">MÙA HÈ CỦA LUCA</h4>
+                                <p class="" style="color: #1aa29b;">Hoạt hình</p>
                             </div>
-                            <div class="modal-body">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">Mã đơn đặt:</th>
-                                            <td>123456</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Thời điểm:</th>
-                                            <td>08/04/2024 10:30:00</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Khách hàng:</th>
-                                            <td>John Doe</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Phim:</th>
-                                            <td>Avengers: Endgame</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Suất chiếu:</th>
-                                            <td>10:30 AM</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Phòng chiếu:</th>
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Ghế:</th>
-                                            <td>A1, A2, A3</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Thanh toán:</th>
-                                            <td>Đã thanh toán</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="modal-footer">
-                                <p><strong>Tổng tiền:</strong> 150.000đ</p>
+                        </div>
+                        <div class="card-overlay">
+                            <div class=" card border-0" style="background-color: rgba(11, 0, 0, 0.915);">
+                                <div class="card-body">
+                                    <div class="movie-content">
+                                        <h4 class="text-light">MÙA HÈ CỦA LUCA</h4>
+                                        <p class="fst-italic" style="color: #1aa29b;">Hoạt hình</p>
+                                        <p class="text-warning">1 giờ 30 phút</p>
+                                        <P class="text-light">Mùa Hè Của Luca" kể về chuyến hành trình của cậu bé Luca tại hòn đảo Portorosso 
+                                            thuộc vùng biển Địa Trung Hải ở Ý tuyệt đẹp. Ở đây cậu đã làm quen và kết thân với những người bạn 
+                                            nhỏ mới và tận hưởng...</P>
+                                        <div class="entry-button">
+                                            <a href="" class=" play-video text-decoration-none text-warning">
+                                                <i aria-hidden="true" class="fa fa-play"></i>Trailer
+                                            </a>
+                                            <a href="" class="text-decoration-none text-warning">
+                                                <i aria-hidden="true" class="fa fa-eye"></i>Chi tiết
+                                            </a>
+                                        </div>
+                                        <p class="" style="color: #1aa29b;">Đạo diễn</p>
+                                        <p class="text-light">Enrico Casarosa</p>
+                                        <p class="" style="color: #1aa29b;">Diễn viên</p>
+                                        <p class="text-light">Jacob Tremblay, Jack Dylan Grazer, Emma Berman, Saverio Raimondo, Maya Rudolph, Marco Barricelli, Jim Gaffigan, Sandy Martin</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Phân trang
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav> -->
+
+                <div class="col">
+                    <div class="card image-container">
+                        <img src="https://starlight.vn/Areas/Admin/Content/Fileuploads/images/POSTER/10lives.jpg" alt="Your Image" class="img-fluid">
+                        <div class="card-body">
+                            <div class="movie-content text-center">
+                                <h4 class="text-dark">MÈO MẬP MANG 10</h4>
+                                <p class="" style="color: #1aa29b;">Hài, Hoạt Hình</p>
+                            </div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class=" card border-0" style="background-color: rgba(11, 0, 0, 0.915);">
+                                <div class="card-body">
+                                    <div class="movie-content">
+                                        <h4 class="text-light">MÈO MẬP MANG 10 MẠNG</h4>
+                                        <p class="fst-italic" style="color: #1aa29b;">Hài, Hoạt Hình</p>
+                                        <p class="text-warning">1 giờ 30 phút</p>
+                                        <P class="text-light">Một chú mèo được nuông chiều tới mức sinh ra ích kỷ, không trân trọng những 
+                                            may mắn mà mình đang tận hưởng khi được Rose - một cô sinh viên tốt bụng cứu giúp và yêu thương. 
+                                            Nhưng tất...</P>
+                                        <div class="entry-button">
+                                            <a href="" class=" play-video text-decoration-none text-warning">
+                                                <i aria-hidden="true" class="fa fa-play"></i>Trailer
+                                            </a>
+                                            <a href="" class="text-decoration-none text-warning">
+                                                <i aria-hidden="true" class="fa fa-eye"></i>Chi tiết
+                                            </a>
+                                        </div>
+                                        <p class="" style="color: #1aa29b;">Đạo diễn</p>
+                                        <p class="text-light">Christopher Jenkins</p>
+                                        <p class="" style="color: #1aa29b;">Diễn viên</p>
+                                        <p class="text-light">Mo Gilligan, Simone Ashley, Sophie Okonedo, Zayn Malik, Dylan Llewellyn, Jeremy Swift và Bill Nighy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card image-container">
+                        <img src="https://starlight.vn/Areas/Admin/Content/Fileuploads/images/POSTER/the-round-up.jpg" alt="Your Image" class="img-fluid">
+                        <div class="card-body">
+                            <div class="movie-content text-center">
+                                <h4 class="text-dark">KẺ TRỪNG PHẠT</h4>
+                                <p class="" style="color: #1aa29b;">Hành Động</p>
+                            </div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class=" card border-0" style="background-color: rgba(11, 0, 0, 0.915);">
+                                <div class="card-body">
+                                    <div class="movie-content">
+                                        <h4 class="text-light">VÂY HÃM: KẺ TRỪNG PHẠT</h4>
+                                        <p class="fst-italic" style="color: #1aa29b;">Hành Động</p>
+                                        <p class="text-warning">1 giờ 30 phút</p>
+                                        <P class="text-light">Siêu cớm Ma Seok-do tái xuất để đối đầu với những tội phạm tinh vi trong giới công nghệ. 
+                                            Nắm đấm trứ danh liệu có phát huy được sức mạnh trước liên minh tội phạm của thiên tài công nghệ và ông trùm nh...</P>
+                                        <div class="entry-button">
+                                            <a href="" class=" play-video text-decoration-none text-warning">
+                                                <i aria-hidden="true" class="fa fa-play"></i>Trailer
+                                            </a>
+                                            <a href="" class="text-decoration-none text-warning">
+                                                <i aria-hidden="true" class="fa fa-eye"></i>Chi tiết
+                                            </a>
+                                        </div>
+                                        <p class="" style="color: #1aa29b;">Đạo diễn</p>
+                                        <p class="text-light">Heo Myeong Haeng
+                                        </p>
+                                        <p class="" style="color: #1aa29b;">Diễn viên</p>
+                                        <p class="text-light">Ma Dong-seok, Kim Mu-yeol, Lee Joo-bin
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card image-container">
+                        <img src="https://starlight.vn/Areas/Admin/Content/Fileuploads/images/POSTER/tu-vien-mau.jpg" alt="Your Image" class="img-fluid">
+                        <div class="card-body">
+                            <div class="movie-content text-center">
+                                <h4 class="text-dark">TU VIỆN MÁU (T18)</h4>
+                                <p class="" style="color: #1aa29b;">Kinh dị</p>
+                            </div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class=" card border-0" style="background-color: rgba(11, 0, 0, 0.915);">
+                                <div class="card-body">
+                                    <div class="movie-content">
+                                        <h4 class="text-light">TU VIỆN MÁU (T18)</h4>
+                                        <p class="fst-italic" style="color: #1aa29b;">Kinh dị</p>
+                                        <p class="text-warning">1 giờ 25 phút</p>
+                                        <P class="text-light">
+                                            Với đức tin sâu sắc, Cecilia đến với một tu viện cổ kính, nằm giữa một vùng quê đẹp nên thơ tại nước 
+                                            Ý trong sự chào đón của mọi người. Thế nhưng, những sự kiện kỳ lạ liên tiếp xảy ra, một bước ngoặt ...
+                                        </P>
+                                        <div class="entry-button">
+                                            <a href="" class=" play-video text-decoration-none text-warning">
+                                                <i aria-hidden="true" class="fa fa-play"></i>Trailer
+                                            </a>
+                                            <a href="" class="text-decoration-none text-warning">
+                                                <i aria-hidden="true" class="fa fa-eye"></i>Chi tiết
+                                            </a>
+                                        </div>
+                                        <p class="" style="color: #1aa29b;">Đạo diễn</p>
+                                        <p class="text-light">Michael Mohan
+                                        </p>
+                                        <p class="" style="color: #1aa29b;">Diễn viên</p>
+                                        <p class="text-light">Sydney Sweeney, Álvaro Morte, Simona Tabasco</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
+
     </div>
     
-    <div class="footer bg-image bg-image-footer  m-0 w-100 pt-1">
+    <div class="bg-image bg-image-footer p-0 m-0 w-100 pt-1">
         <!-- Footer -->
         <footer class="text-center text-lg-start text-white">
-            <div class="container text-center text-md-start mt-5 ">
+            <div class="container text-center text-md-start mt-5 p-0">
                 <!-- Grid row -->
                 <div class="row">
                     <!-- Grid column -->
@@ -264,13 +286,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 <script>
-    function highlightButton(button) {
-        // Lặp qua tất cả các nút trong hàng và loại bỏ lớp 'highlight' khỏi chúng
-        let buttons = document.getElementById('buttonRow').querySelectorAll('button');
-        buttons.forEach(btn => btn.classList.remove('highlight'));
-        
-        // Thêm lớp 'highlight' cho nút được chọn
-        button.classList.add('highlight');
-    }
+    // Lắng nghe sự kiện change của combobox
+    document.getElementById('ngaychieu').addEventListener('change', function() {
+        // Lấy giá trị đã chọn từ combobox
+        var selectedValue = this.value;
+        // Kiểm tra nếu giá trị đã chọn là ngày 8/4/2024 thì mở modal
+        if (selectedValue === 'ngay1') {
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+            myModal.show();
+        }
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
 </script>
 </html>
